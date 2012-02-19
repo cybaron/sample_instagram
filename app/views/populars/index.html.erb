@@ -1,0 +1,4 @@
+<h1>Populars#index</h1>
+<% @media_popular.each do |media| %>
+  <img src="<%= media.images.thumbnail.url %>">
+<% end %>

@@ -1,4 +1,6 @@
 Catstagram::Application.routes.draw do
+  get "populars/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
