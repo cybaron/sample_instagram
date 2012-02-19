@@ -1,7 +1,11 @@
 Catstagram::Application.routes.draw do
-  root :to => "populars#index"
+  root :to => "cats#index"
+
   get "populars/index"
   get "populars" => "populars#index"
+
+  get "cats/index"
+  get "cats" => "cats#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
