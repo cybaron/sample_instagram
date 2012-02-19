@@ -87,6 +87,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  instagram
+  instagram (= 0.8.2)
   rails (= 3.0.10)
   sqlite3
