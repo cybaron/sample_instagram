@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.10'
-gem 'instagram', :require => 'instagram/cached'
+gem 'instagram'
+#gem 'instagram', :require => 'instagram/cached'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
