@@ -1,6 +1,17 @@
-<% @media_tag.data.each do |media| %>
-  <img src="<%= media.images.thumbnail.url %>">
+<% form_tag("/") do %>
+  <%= text_field_tag "keyword", @keyword, :type=>"search" %>
+  <%= submit_tag("search") %>
 <% end %>
+
+<% if @media_tag.data.size > 0 then %>
+  検索タグ：<%= @keyword %><br>
+  <% @media_tag.data.each do |media| %>
+    <img src="<%= media.images.thumbnail.url %>">
+  <% end %>
+<% else %>
+  検索タグ：<%= @keyword %><br>該当のタグが設定された画像はありませんでした。
+<% end %>
+
 <!--
 next_max_id = <%= @next_max_id %>, next_min_id=<%= @next_min_id %>
 -->
